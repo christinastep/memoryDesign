@@ -163,6 +163,24 @@
   fill:#423977;
 }
 
+.button--logout{
+  width: 100px !important;
+  margin-bottom: 20px;
+  align-self:flex-end;
+  z-index: 0;
+} 
+
+.button--inline{
+  padding: 0;
+  border:none;
+  text-align: right;
+  font-style: italic;
+  width:100%;
+  font-weight: 300;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
 .button--down{
   padding: 0;
   background-image: url("../images/icons/icon--return.svg");

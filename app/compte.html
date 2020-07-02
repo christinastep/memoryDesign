@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gulp test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff"></head>
+
+</head>
+<body class="body--parameter body--simple">
+  <header class="header header--simple">
+    <button class="button button--retun"></button>
+    <h1 class="headline--icon headline--compte">Ton Compte</h1>
+  </header>
+  <nav class="nav--slider">
+    <nav class="nav--slider__elementGroup">
+      <button class="nav--slider__element nav--slider__element--active">Informations</button>
+      <button class="nav--slider__element">Données d'accès</button>
+    </nav>
+  </nav>
+  <main>
+    <div class="wrapper--flex">
+
+        <section class="section section--invitation members">
+          <div class="section__content">
+            <h2>Informations :</h2>
+            <button class="button button--full button--full--noPadding button--logout">Log out</button>
+            <div class="input">
+              <label for="" class="input__label">Prenom :</label>
+              <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="Monika">
+            </div>
+            <div class="input">
+              <label for="" class="input__label">Nom :</label>
+              <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="Daupe">
+            </div>
+            
+            <button class="button button--full button--full--noPadding">Sauvgarde des changements</button>
+            
+          </div>
+        </section>
+
+          
+      <section class="section section--invitation invitation">
+        <div class="section__content">
+          <h2>Données d'accès :</h2>
+          <div class="textGroup">
+            <p class="text">Pour change la donne d’access on te demande pour reconnecter avec ton mot passe pour etre sur que c’est toi.</p>
+            <div class="input">
+              <label for="" class="input__label">Motpasse :</label>
+              <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="******">
+            </div>
+            <button class="button button--full">Accedere au donne d’acces</button>
+          </div>
+
+          <div class="group">
+            <div class="group__Headline">
+              <h3 class="group__Headline__text">Changement du mot passe :</h3>
+            </div>
+            <div class="input">
+              <label for="" class="input__label">Motpasse :</label>
+              <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="******">
+            </div>
+            <div class="input">
+              <label for="" class="input__label">Motpasse :</label>
+              <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="******">
+            </div>  
+          </div>
+
+          <div class="group">
+            <div class="group__Headline">
+              <h3 class="group__Headline__text">Changement du email :</h3>
+            </div>
+            <div class="input">
+              <label for="" class="input__label">Email :</label>
+              <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="******">
+            </div>
+            <div class="input">
+              <label for="" class="input__label">Email :</label>
+              <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="******">
+            </div>  
+          </div>
+          
+         
+          
+          
+        </div>
+      </section>
+
+      
+      
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- build:js js/main.min.js -->
+  <script src="js/parameters.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

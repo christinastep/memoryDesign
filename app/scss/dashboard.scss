@@ -5,22 +5,34 @@
 
 }
 
-.espaceGroup__Headline{
+.button--creEspace--top{
+  margin-bottom: 30px;
+}
+
+.group{
+  width: 100%;
+}
+
+.group__Headline{
   border-bottom: solid 1px $color--strong;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
   color:$color--strong;
-  margin-top: 30px;
-  .espaceGroup__Headline__text{
+  //margin-top: 30px;
+  .group__Headline__text{
     font-weight: bold;
     font-size: 13px;
     line-height: 15px;
   }
-  .espaceGroup__Headline__button{
+  .group__Headline__button{
 
   }
+}
+.group__Headline{
+  margin-bottom: 20px;
 }
 .espace{
   width: 100%;
@@ -44,5 +56,11 @@
     margin-top: 20px;
     color: #423977;
 
+  }
+}
+
+.invitationEspace{
+  .espaceGroup__Headline{
+    margin-top: 0;
   }
 }

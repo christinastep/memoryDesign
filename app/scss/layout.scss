@@ -140,7 +140,7 @@ h2{
   // top:-60px;
   // left:50%;
   //transform: translateX(-50%) scale(1.1);
-  z-index: 3;
+  //z-index: 3;
   border:solid 4px #423977;
   display: flex;
   justify-content: center;
@@ -228,6 +228,7 @@ h2{
   padding-right: 10px;
   padding-left: 10px;
   height:40px;
+  z-index: 1;
   h1{
     font-weight: bold;
     font-size: 16px;
@@ -256,6 +257,11 @@ h2{
     &.headline--membres{
       &:after{
         background-image: url("../images/icons/icon--group.svg");
+      }
+    }
+    &.headline--compte{
+      &:after{
+        background-image: url("../images/pixelImages/profil@2x.jpg");
       }
     }
   }
