@@ -1,0 +1,48 @@
+@import "variables";
+
+.espaceGroup{
+  width: 100%;
+
+}
+
+.espaceGroup__Headline{
+  border-bottom: solid 1px $color--strong;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color:$color--strong;
+  margin-top: 30px;
+  .espaceGroup__Headline__text{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .espaceGroup__Headline__button{
+
+  }
+}
+.espace{
+  width: 100%;
+  border-radius: 10px;
+  border:solid 1px $color--strong;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+  margin-bottom: 30px;
+  .espace__image{
+
+  }
+  .espace__name{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    color: #423977;
+
+  }
+}

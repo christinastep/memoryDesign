@@ -1,0 +1,70 @@
+@import "variables";
+
+.body--creeMemory{
+  .image__imgWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    img{
+      width:calc(20% - 5px);
+      margin-right: 5px;
+    }
+  }
+
+  .form--souvenir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buttonGroup--addMemory{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    @include min-sm{
+      justify-content: center;
+    }
+    button{
+      margin-right: 10px;
+    }
+  }
+
+  .switchGroup{
+    max-width: 400px;
+  }
+
+  .footer{
+    position: fixed;
+    bottom:0;
+    height:35vh;
+    background-color: #EDE7F2;
+    width:100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 20vh;
+    transform: translateY(200%);
+    transition: all 0.5s;
+    .footer--border{
+      position: absolute;
+      left:0px;
+      top:0;
+      width:100%;
+      transform: translateY(-85%);
+      svg{
+        width:100%;
+      }
+    }
+  }
+  .input,.inputGroup{
+    display: none;
+    &.souvenir__input--text{
+      display: block;
+    }
+  }
+  .form--souvenir{
+    padding-bottom: 30vh;
+  }
+  
+}

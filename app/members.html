@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gulp test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff"></head>
+
+</head>
+<body class="body--parameter body--simple">
+  <header class="header header--simple">
+    <button class="button button--retun"></button>
+    <h1 class="headline--icon headline--membres">Members</h1>
+  </header>
+  <nav class="nav--slider">
+    <nav class="nav--slider__elementGroup">
+      <button class="nav--slider__element nav--slider__element--active">Members (12)</button>
+      <button class="nav--slider__element">+ Ajoute Membre</button>
+    </nav>
+  </nav>
+  <main>
+    <div class="wrapper--flex">
+
+        <section class="section section--invitation members">
+          <div class="section__content">
+            <h2>List du Members :</h2>
+            <div class="list">
+                <div class="line--member">
+                    <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+                    <div class="line--member__text">
+                      <p class="line--member__text__text">Marie Wolfsberg</p>
+                      <p class="line--member__text__role">Souer du Monie</p>
+                    </div>
+                  </div>
+                  <div class="line--member">
+                    <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+                    <div class="line--member__text">
+                      <p class="line--member__text__text">Marie Wolfsberg</p>
+                      <p class="line--member__text__role">Souer du Monie</p>
+                    </div>
+                  </div>
+                  <div class="line--member">
+                    <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+                    <div class="line--member__text">
+                      <p class="line--member__text__text">Marie Wolfsberg</p>
+                      <p class="line--member__text__role">Souer du Monie</p>
+                    </div>
+                  </div>
+                  <div class="line--member">
+                    <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+                    <div class="line--member__text">
+                      <p class="line--member__text__text">Marie Wolfsberg</p>
+                      <p class="line--member__text__role">Souer du Monie</p>
+                    </div>
+                  </div>
+            </div>
+            
+            <button class="button button--full button--full--noPadding">Ajoute un membre</button>
+          </div>
+        </section>
+
+          
+      <section class="section section--invitation invitation">
+        <div class="section__content">
+          <h2>Invite un Membre :</h2>
+          <div class="textGroup">
+            <p class="text">Tu connais quel un qui tu veux inviter dans cet espace, qui est pas encore la? Envoyer lui le link. Comme ca il peux fair un demand acces au admin.</p>
+            <div class="input">
+              <label for="" class="input__label">Link du Partage:</label>
+              <input  type="text" class="input__field" placeholder="C'est quoi le Titre" value="http://memory.com/moniemueller">
+            </div>
+            <p class="text text--alert">Attention : Le person peut just avoir acces au espace si l’admin valider ca.</p>  
+          </div>
+
+         
+          
+          
+        </div>
+      </section>
+
+      
+      
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- build:js js/main.min.js -->
+  <script src="js/parameters.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gulp test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff"></head>
+
+</head>
+<body class="body--parameter body--simple">
+  <header class="header header--simple">
+    <button class="button button--retun"></button>
+    <h1 class="headline--parameters">Parameters</h1>
+  </header>
+  <nav class="nav--slider">
+    <div class="nav--slider__elementGroup">
+      <button class="nav--slider__element nav--slider__element--active">Informations</button>
+      <button class="nav--slider__element">Invitations</button>
+      <button class="nav--slider__element">Demandes Acces</button>
+      <button class="nav--slider__element">Members</button>
+    </div>
+  </nav>
+  <main>
+    <div class="wrapper--flex">
+      <section class="section section--info info">
+        <div class="section__content">
+          <h2>Informations :</h2>
+          <div class="info__intro">
+            <img class="info__intro__image" src="images/pixelImages/oma@1x.png" alt="">
+            <div class="info__intro__textBox">
+              <p class="info__intro__textBox__headline">Monie Mueller</p>
+              <p class="info__intro__textBox__subheadline">10.02.1934 - 29.8.2020</p>
+            </div>
+          </div>
+          <div class="textGroup">
+            <h3>Supprime l’esepace :</h3>
+            <p class="text">Ici tu ajoute des email addresse de eux avec qui tu voudrais partage des contenues plus personnelle. Cet person a le droit de voir tous des memories.</p>
+          </div>
+
+          <div class="switchGroup">
+            <div class="toggle-btn">
+              <input type="checkbox"  checked class="cb-value" />
+              <span class="round-btn"></span>
+            </div>
+            <p class="text">Je suis sure que la person serai d’accord si je publicer ca. Aussi je suis pense personne serai derange par cet contenue</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--invitation invitation">
+        <div class="section__content">
+          <h2>Invitations :</h2>
+          <div class="textGroup">
+            <h3>Text du Invitation :</h3>
+            <p class="text">Cet Text va etre ajoute dans la email du invitation.</p>
+            <div class="input">
+              <label for="" class="input__label">Debut du Mail :</label>
+              <textarea type="text" class="input__field" placeholder="C'est quoi le Titre" value="Cher Famiele et cheres copains,
+              Comment vous savez que Annik (jshfg) est decide. Pour se souvenir ensemble j’avais cree un espace online pour se partage des memories. Je vous invite de joindre l’espace.
+              
+              Paul Müller (Le fis du Monie )"></textarea>
+            </div>
+          </div>
+
+          <div class="textGroup">
+            <h3>Invitation :</h3>
+            <p class="text">Ici tu ajoute des email addresse de eux avec qui tu voudrais partage des contenues plus personnelle. Cet person a le droit de voir tous des memories.</p>
+            <div class="input">
+              <label for="" class="input__label">Email :</label>
+              <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="christina_stepahan@icloud.com">
+            </div>
+            <button class="button button--full">Ennvoyer invitation</button>
+          </div>
+
+          <div class="textGroup">
+            <h3>List des invitations ouvert :</h3>
+            <p class="text">Ici tu vois tous des adresse mail tu as inviter qui sont pas encore accedere au espace.</p>
+          </div>
+          
+          
+        </div>
+      </section>
+
+      <section class="section section--invitation demandAcess">
+          <div class="section__content">
+            <h2>Demand Acces :</h2>
+            <div class="line--member line--member--demand">
+              <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+              <div class="line--member__text">
+                <p class="line--member__text__text">Marie Wolfsberg</p>
+                <p class="line--member__text__role">Souer du Monie</p>
+                <div class="line--member--demand__buttonGroup">
+                  <button class="button button--strong button--full  button--inForm line--member__button--accept">Accepe Acces</button>
+                  <button class="button button--delte line--member__delte"></button>
+                </div>
+              </div>  
+            </div>
+            <div class="line--member line--member--demand">
+              <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+              <div class="line--member__text">
+                <p class="line--member__text__text">Marie Wolfsberg</p>
+                <p class="line--member__text__role">Souer du Monie</p>
+                <div class="line--member--demand__buttonGroup">
+                  <button class="button button--strong button--full  button--inForm line--member__button--accept">Accepe Acces</button>
+                  <button class="button button--delte line--member__delte"></button>
+                </div>
+              </div>  
+            </div>
+            <div class="line--member line--member--demand">
+              <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+              <div class="line--member__text">
+                <p class="line--member__text__text">Marie Wolfsberg</p>
+                <p class="line--member__text__role">Souer du Monie</p>
+                <div class="line--member--demand__buttonGroup">
+                  <button class="button button--strong button--full  button--inForm line--member__button--accept">Accepe Acces</button>
+                  <button class="button button--delte line--member__delte"></button>
+                </div>
+              </div>  
+            </div>
+        </section>
+
+      <section class="section section--invitation members">
+        <div class="section__content">
+          <h2>Members :</h2>
+          <div class="line--member">
+            <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+            <div class="line--member__text">
+              <p class="line--member__text__text">Marie Wolfsberg</p>
+              <p class="line--member__text__role">Souer du Monie</p>
+            </div>
+            <button class="button button--delte line--member__delte"></button>
+          </div>
+          <div class="line--member">
+            <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+            <div class="line--member__text">
+              <p class="line--member__text__text">Marie Wolfsberg</p>
+              <p class="line--member__text__role">Souer du Monie</p>
+            </div>
+            <button class="button button--delte line--member__delte"></button>
+          </div>
+          <div class="line--member">
+            <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+            <div class="line--member__text">
+              <p class="line--member__text__text">Marie Wolfsberg</p>
+              <p class="line--member__text__role">Souer du Monie</p>
+            </div>
+            <button class="button button--delte line--member__delte"></button>
+          </div>
+          <div class="line--member">
+            <div class="line--member__image"><img src="images/pixelImages/profil@2x.jpg"></div>
+            <div class="line--member__text">
+              <p class="line--member__text__text">Marie Wolfsberg</p>
+              <p class="line--member__text__role">Souer du Monie</p>
+            </div>
+            <button class="button button--delte line--member__delte"></button>
+          </div>
+        </div>
+      </section>
+
+      
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- build:js js/main.min.js -->
+  <script src="js/parameters.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,30 @@
+@import "variables";
+
+.overview{
+  background-color: $color--strong;
+  min-height: 100vh;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box--flex{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .button{
+    margin: 5px;
+  }
+  a{
+    text-decoration: none;
+    text-align: center;
+  }
+}
