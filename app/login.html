@@ -19,8 +19,8 @@
     <meta name="theme-color" content="#ffffff"></head>
 
 </head>
-<body class="body--login scroll--no">
-  <header class="header header--30vh header--sitting">
+<body class="body--login scroll--no scroll--no--50">
+  <header class="header header--50vh header--standing">
     
   </header>
   <!-- <button class="button button--strong button--full button--end button--next">Etapes suivant</button> -->
@@ -36,58 +36,31 @@
           <div class="input">
             <label for="" class="input__label">Passwort</label>
             <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="*******">
-            <button class="button button--inline">Oublie le motpasse</button>
+            <button class="button button--inline button--oubliez">Oublie le motpasse</button>
           </div>
-          <button class="button button--full button--full--noPadding">Se connecter</button>
+          <a href="dashboard.html" class="button button--full button--full--noPadding button--end">Se connecter</a>
         </div>
       </section>
-      <section class="section">
+      <section class="section section--oubliez">
         <div class="section__content">
-          <h2>Cree un espace pour :</h2>
-          <div class="box--profilimage">
-            <img src="images/pixelImages/oma@2x.png" alt="">
+          <h2>Mot de passe oublié ?</h2>
+          <div class="text">Tu as oublies ton mot passse ? Pas un problem. Just ajoute ton adresse mail et on t'ennvoyer un mail por reset.</div>
+          <div class="input">
+            <label for="" class="input__label">E-mail</label>
+            <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="christina_stephan@icloud.com">
           </div>
-          <button class="button button--ajoute--link">+ Ajoute Image</button>
+          <button class="button button--full button--full--noPadding button--end button--oubliez--mail">Commande link</button>
         </div>
       </section>
-      <section class="section">
+      <section class="section section--feedback">
         <div class="section__content">
-          <h2>Cree un espace pour :</h2>
-          <div class="input">
-            <label for="" class="input__label">Date du naissance :</label>
-            <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="Monie">
-          </div>
-          <div class="input">
-            <label for="" class="input__label">Date du morte :</label>
-            <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="Monie">
+
+          <div class="feedback feedback--noButton">
+            <h2 class="feedback__headline">mail etait envoyé</h2>
+            <img src="images/pixelImages/oma@2x.png" alt="" class="feedback__image">
+            <p class="text feedback__text">On a envoyer un mail a <span>christina_stephan@icloud.com</span> pour reset ton mot des passe</p>
           </div>
           
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__content">
-          <h2>Cree un espace pour :</h2>
-          <div class="input">
-            <label for="" class="input__label">Relation entre toi  :</label>
-            <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="Fis du person decide">
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__content">
-          <h2>Verification du morte :</h2>
-          <p class="text text--center">Pour cree unespace tu es oblige de ajoute un facture ou une avis du pombiner funreal pour verifice que tu es un person proch du person decide et que la person est bien morte. Si tu as pas des papier on t’invite de propose la famille du person decide de la creeation de une MEMORYVOX</p>
-          <button class="button button--ajoute button--ajoute--link">Ajoute un Document</button>
-        </div>
-      </section>
-      <section class="section">
-        <div class="section__content boxContent--last">
-          <svg width="51" height="52" viewBox="0 0 51 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M51 19.4029C51 29.9279 51 40.4271 51 51.0038C34.0085 51.0038 16.9915 51.0038 0 51.0038C0.0256281 50.4878 0.0512563 49.9719 0.0512563 49.4818C0.0512563 40.0402 0.0768844 30.5728 0.0256281 21.1312C0.0256281 20.1768 0.307538 19.5576 1.05075 18.9901C2.8191 17.6745 4.51055 16.2557 6.27889 14.9142C6.9196 14.4241 7.22714 13.934 7.17588 13.1085C7.12462 11.2253 7.20151 9.34217 7.15025 7.45902C7.12462 6.60773 7.43216 6.34976 8.25226 6.37556C10.8407 6.42715 13.4291 6.45295 16.0176 6.34976C16.7864 6.32396 17.6578 6.0144 18.2985 5.55006C20.605 3.89908 22.809 2.1449 24.9874 0.364935C25.6025 -0.150998 26.0126 -0.0994049 26.6276 0.390732C28.5754 1.96433 30.6256 3.43474 32.5221 5.05993C33.701 6.066 34.9055 6.47874 36.4432 6.40135C38.8779 6.29817 41.3382 6.37556 43.8754 6.37556C43.8754 8.67146 43.8497 10.8126 43.901 12.9279C43.901 13.3665 43.9779 13.9598 44.2598 14.1661C46.4638 15.9719 48.7447 17.6745 51 19.4029ZM48.6678 22.7822C48.1296 23.066 47.7452 23.2466 47.3864 23.4529C40.5693 27.1935 33.7523 30.9082 26.9608 34.7003C26.0382 35.2162 25.3975 35.2678 24.4492 34.7261C17.709 30.9598 10.9176 27.2451 4.15176 23.5045C3.74171 23.2982 3.33166 23.0918 2.8191 22.8338C2.8191 31.4241 2.8191 39.8596 2.8191 48.3209C18.1447 48.3209 33.3935 48.3209 48.6935 48.3209C48.6678 39.808 48.6678 31.3725 48.6678 22.7822ZM9.89246 9.1616C9.89246 13.9082 9.86683 18.5258 9.91809 23.1434C9.91809 23.5045 10.3794 23.9947 10.7638 24.2268C15.4281 26.8323 20.1437 29.3862 24.808 31.9916C25.5 32.3786 26.0382 32.3012 26.6789 31.94C31.2407 29.412 35.8281 26.8839 40.4156 24.4074C41.1332 24.0205 41.3382 23.5819 41.3382 22.808C41.3126 19.9962 41.3382 17.1586 41.3638 14.3467C41.3638 12.6441 41.3638 10.9416 41.3638 9.18739C30.805 9.16159 20.4256 9.1616 9.89246 9.1616ZM29.908 6.29817C28.5241 5.21471 27.3965 4.28603 26.2176 3.40894C26.0126 3.25416 25.5513 3.27996 25.3462 3.43474C24.1673 4.28603 23.0397 5.21471 21.6558 6.29817C24.5261 6.29817 27.0633 6.29817 29.908 6.29817ZM47.8477 20.28C46.4638 19.1965 45.2593 18.2678 43.9266 17.2102C43.9266 19.0675 43.9266 20.6411 43.9266 22.4211C45.2593 21.6988 46.4638 21.0539 47.8477 20.28ZM3.61357 20.28C4.84372 20.9507 5.94573 21.544 7.12462 22.1889C7.12462 20.5895 7.12462 19.1707 7.12462 17.5197C5.89447 18.5 4.79246 19.3513 3.61357 20.28Z" fill="black"/>
-          </svg>
-                
-          <p class="text text--center">On a recu ta demande de creation du compte. On va travailler sur ta demande des prochaine deux jour. Tu vas recu un mail si ton espace etait valide</p>
-
         </div>
       </section>
     </div>
@@ -96,7 +69,7 @@
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <!-- build:js js/main.min.js -->
   
-  <script src="js/creeespace.js"></script>
+  <script src="js/login.js"></script>
   <!-- endbuild -->
 </body>
 </html>

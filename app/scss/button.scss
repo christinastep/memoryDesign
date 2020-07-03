@@ -37,10 +37,12 @@
   position: fixed;
   bottom: 20px;
   left:15px;
+  right:15px;
+  //width: auto !important;
   @include min-sm{
-      max-width: 300px;
-      left:50%;
-      transform: translateX(-50%)
+    max-width: 300px;
+    left:50%;
+    transform: translateX(-50%)
   }
 }
 
@@ -48,6 +50,8 @@
   background-image: url("../images/icons/icon--delte.svg");
   background-repeat: no-repeat;
 }
+
+
 
 .button--full{
   width: calc(100% - 30px);

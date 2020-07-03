@@ -29,6 +29,9 @@ img{
   &--30vh{
     height: 30vh;
   }
+  &--50vh{
+    height: 40vh;
+  }
   &--sitting{
     background-image: url("../images/icons/fille--sitting.svg");
     background-position: right bottom 60%;
@@ -36,7 +39,12 @@ img{
     @include min-sm{
       background-size: auto;
     }
+  }
+  &--standing{
     
+    background-image: url(../images/icons/fille.svg);
+    background-position: left 50% top 20%;
+    background-size: 87%;
   }
 }
 
@@ -201,11 +209,18 @@ h2{
   max-height: 100vh;
   overflow-y: hidden;
   position: relative;
+  
   main{
     height: 70vh;
     padding: 0px;
     margin-top: 30vh;
     overflow-x: hidden;
+  }
+  &--50{
+    main{
+      height: 60vh;
+      margin-top: 40vh;
+    }
   }
   .header{
     position: fixed;
@@ -305,4 +320,10 @@ h2{
   .wrapper--flex{
     margin-top: 100px;
   }
+}
+
+.image--feedback{
+  background-color: pink;
+  width:50%;
+  height:20%;
 }
