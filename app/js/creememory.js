@@ -28,7 +28,7 @@ window.addEventListener('load', function() {
   /// animation header
   var div = document.querySelector(".main--scroll");
   var headerImgBox =document.querySelector(".header__img");
-  //var headerMain =document.querySelector(".header__main");
+  var headerMain =document.querySelector(".header--main");
   console.log("scroll test")
 
   document.addEventListener("scroll",function(){
@@ -40,9 +40,9 @@ window.addEventListener('load', function() {
     if(y>0){
       console.log(y);
       headerImgBox.style.height=y+"px";
-      //headerMain.style.backgroundColor="transparent";
-      if(y<50){
-       // headerMain.style.backgroundColor="#EDE7F2";
+      headerMain.style.backgroundColor="transparent";
+      if(y<45){
+      headerMain.style.backgroundColor="#EDE7F2";
       }
     }
     

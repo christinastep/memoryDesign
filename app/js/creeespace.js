@@ -24,7 +24,7 @@ window.addEventListener('load', function() {
       
       
       if(clickCounter===5){
-        nextButton.innerHTML="Back"
+        nextButton.innerHTML='<a href="dashboard.html">Back</a>'
       }
     } 
     // else if(clickCounter===5){

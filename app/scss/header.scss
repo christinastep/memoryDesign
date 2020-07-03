@@ -1,0 +1,44 @@
+@import "variables";
+
+.header--main{
+  display: flex;
+  padding: 10px 15px 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  height:45px;
+  .header__logo{
+    font-weight: bold;
+  }
+  .header__right{
+    width:25px;
+    height:25px;
+    background-size:  100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .header__right--settings{
+    background-image: url("../images/icons/icon--settings.svg");
+  }
+  .header__right--compte{
+    overflow: hidden;
+    border-radius: 50%;
+    background-image: url("../images/pixelImages/profil@2x.jpg");
+  }
+  .header__right--close{
+    background-image: url("../images/icons/icon--close.svg");
+    background-size: 70%;
+  }
+}
+
+.body--espace{
+  .header--main{
+    position: fixed;
+    z-index: 5;
+    background-color: $color--light;
+  }
+}

@@ -23,6 +23,10 @@
     width: 100%;
     font-size: 12px;
     line-height: 14px;
+    @include min-sm{
+      font-size: 14px;
+      line-height: 16px;
+    }
     .line--member__text__text{
       font-weight: bold;
     }
@@ -47,6 +51,9 @@
     margin-top: 5px;
     @include min-sm{
       justify-content: flex-end;
+      position: absolute;
+      top: 0;
+      right: 0;
     }
     .line--member__delte{
       position: relative;

@@ -1,11 +1,12 @@
 @import "variables";
 
 .nav--slider{
-  padding:15px;
+  padding:10px 15px ;
   background-color: #fff;
   overflow: scroll;
   width: 100%;
-  z-index: 1;
+  z-index: 4;
+  border: solid 1px $color--light; 
   
   .nav--slider__elementGroup{
     display: flex;
@@ -26,6 +27,10 @@
     border: 1px solid $color--light;
     background-color: #fff;
     color:$color--strong;
+    @include min-sm{
+      font-size: 12px;
+      padding: 10px 20px;
+    }
     &:last-child{
       margin-right: 0;
     }

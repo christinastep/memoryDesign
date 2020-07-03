@@ -1,5 +1,9 @@
 @import "variables";
 
+.button a{
+  text-decoration: none;
+}
+
 .button{
   padding:10px 20px;
   padding: 14px 25px;
@@ -20,6 +24,11 @@
   // }
   &:focus{
     outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+-webkit-tap-highlight-color: transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''
+  }
+  &:active{
+    outline: none;
   }
 }
 
@@ -28,7 +37,9 @@
   bottom: 20px;
   left:15px;
   @include min-sm{
-
+      max-width: 300px;
+      left:50%;
+      transform: translateX(-50%)
   }
 }
 
@@ -41,8 +52,8 @@
   width: calc(100% - 30px);
   @include min-sm{
     max-width: 300px;
-    left:50%;
-    transform: translateX(-50%)
+    // left:50%;
+    // transform: translateX(-50%)
   }
   &.button--full--noPadding{
     width: 100%;
@@ -52,6 +63,9 @@
 .button--strong{
   background-color: $color--strong;
   color: #fff;
+  a{
+    color:#fff;
+  }
   // &:hover{
   //   background-color: #fff;
   //   border:solid 1px $color--strong;
@@ -139,6 +153,10 @@
   p{
     width:calc(100% - 50px);
     font-size: 12px;
+    @include min-sm{
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
 

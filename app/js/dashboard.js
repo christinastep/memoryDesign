@@ -13,7 +13,8 @@ window.addEventListener('load', function() {
   /// animation header
   var div = document.querySelector(".main--scroll");
   var headerImgBox =document.querySelector(".header__img");
-  //var headerMain =document.querySelector(".header__main");
+  var headerMain =document.querySelector(".header--main");
+  var navSlider=this.document.querySelector(".nav--slider");
   console.log("scroll test")
 
   document.addEventListener("scroll",function(){
@@ -25,21 +26,25 @@ window.addEventListener('load', function() {
     if(y>0){
       console.log(y);
       headerImgBox.style.height=y+"px";
-      //headerMain.style.backgroundColor="transparent";
-      if(y<50){
-       // headerMain.style.backgroundColor="#EDE7F2";
+      headerMain.style.backgroundColor="transparent";
+      navSlider.style.position="relative";
+      navSlider.style.top="auto";
+      if(y<45){
+      headerMain.style.backgroundColor="#EDE7F2";
+      navSlider.style.position="fixed";
+      navSlider.style.top="45px";
       }
     } 
   })
 
   let wrapper= this.document.querySelector(".wrapper--flex");
-  let navSlider= this.document.querySelectorAll(".nav--slider__element");
+  let navSliderElement= this.document.querySelectorAll(".nav--slider__element");
   let clickCounter=0;
 
-  for (let i = 0; i < navSlider.length; i++) {
-    navSlider[i].addEventListener("click",function(){
-      for (let j = 0; j < navSlider.length; j++) {
-        navSlider[j].className="nav--slider__element";
+  for (let i = 0; i < navSliderElement.length; i++) {
+    navSliderElement[i].addEventListener("click",function(){
+      for (let j = 0; j < navSliderElement.length; j++) {
+        navSliderElement[j].className="nav--slider__element";
       }
       let selectedSlide=i;
       if(isMobil) {
@@ -48,7 +53,7 @@ window.addEventListener('load', function() {
         wrapper.style.transform="translateX("+selectedSlide*(-750)+"px)";
       }
      
-      navSlider[i].classList.add("nav--slider__element--active");
+      navSliderElement[i].classList.add("nav--slider__element--active");
     })
   }
 
