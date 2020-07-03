@@ -56,7 +56,7 @@
   // background-color: #EDE7F2;
   // margin-bottom: 10vh;
   .header--espace{
-    height:60vh;
+    height:50vh;
     @include min-sm{
       height: 50vh;
     }
@@ -68,7 +68,7 @@
     width: 100%;
   }
   main{
-    margin-top: 60vh;
+    margin-top: 50vh;
     @include min-sm{
       margin-top: 50vh;
     }

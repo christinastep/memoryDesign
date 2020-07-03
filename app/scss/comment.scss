@@ -1,0 +1,99 @@
+@import "variables";
+
+.boxComments{
+  width: 100%;
+  margin-top: 10px;
+  border-top: solid 1px $color--light;
+  padding-top: 15px;  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  display: none;
+  &.open{
+    display: flex;
+  }
+  .comment{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .comment__image{
+      width: 27px;
+      height:27px;
+      border-radius: 50%;
+    }
+    .comment__message{
+      background-color: #F2F2F0;
+      border-radius: 7px;
+      width: calc(100% - 40px);
+      text-align: left;
+      padding:10px;
+      .comment__message__name{
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        @include min-sm{
+          font-size: 15px;
+          line-height: 17px;
+        }
+      }
+      .comment__message__text{
+        font-weight: bold;
+        font-weight: 300;
+        @include min-sm{
+          font-size: 15px;
+          line-height: 17px;
+        }
+        font-size: 12px;
+        line-height: 14px;
+      }
+      .comment__message__image{
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .comment__form{
+    display: flex;
+    align-items: flex-start;
+    width:100%;
+    border-top:solid 1px $color--light;
+    padding-top: 10px;
+
+    .comment__form__button{
+      padding: 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      width:40px;
+      height:30px;
+    }
+    .comment__form__input{ 
+      margin-bottom: 5px;  
+      padding: 10px;
+      font-size: 12px;
+      border:solid 1px $color--light;
+      font-family: "Roboto", sans-serif;
+      @include min-sm{
+        font-size: 15px;
+        line-height: 17px;
+      }
+    } 
+    .comment__form--image{ 
+      background-image: url("../images/icons/icon--image.svg");
+      fill: $color--strong;
+      background-size: 90%;
+      border: none;
+      width:40px;
+      margin-right: 10px;
+    }
+    
+  }
+  .comment__form--send{
+    padding: 0;
+    color:#fff;
+    background-color: $color--strong;
+    padding:10px;
+  }
+}

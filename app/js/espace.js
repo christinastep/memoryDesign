@@ -51,6 +51,17 @@ document.addEventListener("scroll",function(){
   
 })
 
+var commentButton=document.querySelectorAll(".souvenir__commentairLink")
+
+var commentBox=document.querySelectorAll(".boxComments");
+
+for (let i = 0; i < commentButton.length; i++) {
+  commentButton[i].addEventListener("click",function(){
+    commentBox[i].classList.toggle("open")
+  })
+  
+}
+
 
 
 

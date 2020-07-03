@@ -1,5 +1,9 @@
 @import "variables";
 
+textarea:focuse{
+  outline: 0;
+}
+
 .input{
   position: relative;
   margin-bottom: 20px;
@@ -17,12 +21,13 @@
     margin-left: 10px;
     padding: 3px;
   }
-  .input__field{
+  .input__field,textarea{
     border: 1px solid $color--light;
     border-radius: 10px;
     width: 100%;
     padding:15px;
     font-size: 14px;
+    font-family: sans-serif;
     line-height: 16px;
     @include min-sm{
       font-size: 16px;
