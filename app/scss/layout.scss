@@ -14,61 +14,10 @@ body{
   align-items: center;
 }
 
-html{
-  //overflow-y: hidden;
-}
 
 img{
   width: 100%;
 }
-
-.header{
-  background-color: $color--light;
-  background-repeat: no-repeat;
-  width: 100%;
-  &--30vh{
-    height: 30vh;
-  }
-  &--50vh{
-    height: 40vh;
-  }
-  &--sitting{
-    background-image: url("../images/icons/fille--sitting.svg");
-    background-position: right bottom 60%;
-    background-size: 45%;
-    @include min-sm{
-      background-size: auto;
-    }
-  }
-  &--standing{
-    
-    background-image: url(../images/icons/fille.svg);
-    background-position: left 50% top 20%;
-    background-size: 87%;
-  }
-}
-
-// .header--resize{
-  .header__img{
-    overflow: hidden;
-    background-color: #EDE7F2;
-    //position: sticky;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; 
-    height: 30vh;
-    overflow: hidden;
-    svg{
-      height: 90%;
-    }
-  }
-// }
-
-
-
 
 main{
   padding:15px;
@@ -80,21 +29,48 @@ main{
   }
 }
 
-.body--espace{
+.body--slider{
   main{
     padding: 0;
+  }
+  .wrapper--flex{
+    display: flex;
+    width: 700vw;
+    height:100%;
+    align-items: flex-start;
+    transition: all 0.3s;
+    section{
+      width: 100vw;
+      height:100%;
+      @include min-sm{
+        max-width: 750px;
+      }
+      padding-left: 15px;
+      padding-right: 15px;
+      //height: 70vh;
+      .section__content{
+        display: flex;
+        height:100%;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+    }
   }
 }
 
-.body--simple{
-  main{
-    padding: 0;
-  }
-}
 
 .body--simple{
   main{
     margin-top: 0vh;
+  }
+
+  .nav--slider{
+    margin-top: 40px;
+    position: fixed;
+  }
+  .wrapper--flex{
+    margin-top: 100px;
   }
 }
 
@@ -125,205 +101,66 @@ main{
   }
 }
 
-h2{
-  text-transform: uppercase;
-  color:$color--grey;
-  font-weight: 500;
-  @include min-sm{
-    font-size: 18px;
-    line-height: 22px;
-  }
-  font-size: 14px;
-  line-height: 16px;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  width: 100%;
-}
-
-.text{
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 17px;
-  @include min-sm{
-    font-size: 16px;
-    line-height: 22px;
-  }
-  &--alert{
-    color: $color--strong;
-    font-style: italic;
-  }
-}
-
-.box--profilimage{
-  width:90px;
-  height:90px;
-  border-radius: 50%;
-  position: relative;
-  // position: absolute;
-  // top:-60px;
-  // left:50%;
-  //transform: translateX(-50%) scale(1.1);
-  //z-index: 3;
-  border:solid 4px #423977;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  img{
-    width: 90%;
-  }
-  &::after,&::before{
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-image: url("../images/icons/puzzelGroup.svg");
-    right: -20px;
-    bottom: -20px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  &:after{
-    transform-origin: left top;
-    @keyframes rotatePuzzel {
-      0%{transform: rotate(0deg)}
-      80%{transform: rotate(360deg)}
-      100%{transform: rotate(360deg)}
-    }
-    //animation: rotatePuzzel 3s infinite -1.5s;
-  }
-  &:before{
-    bottom: -20px;
-    right:-20px;
-    transform-origin: left top;
-    @keyframes rotatePuzzel {
-      0%{transform: rotate(0deg)}
-      80%{transform: rotate(360deg)}
-      100%{transform: rotate(360deg)}
-    }
-    //animation: rotatePuzzel 3s infinite 0s;
-  }
-}
 
 .scroll--no{
-  //overflow-y: hidden;
   max-height: 100vh;
+  height: 100%;
   overflow-y: hidden;
   position: relative;
-  
+
   main{
     height: 70vh;
-    padding: 0px;
-    margin-top: 30vh;
+    margin-top: 0;
     overflow-x: hidden;
   }
-  &--50{
+  .header{
+    position: relative;
+    height: 30vh;
+  }
+  &.body--header--40{
     main{
       height: 60vh;
-      margin-top: 40vh;
     }
+    .header{
+      height: 40vh;
+    } 
   }
-  .header{
-    position: fixed;
-  }
+  
 }
 
-.wrapper--flex{
+
+
+.main--scroll{
   display: flex;
-  width: 700vw;
-  align-items: flex-start;
-  transition: all 0.3s;
-  section{
-    width: 100vw;
-    @include min-sm{
-      max-width: 750px;
-    }
-    padding-left: 15px;
-    padding-right: 15px;
-    //height: 70vh;
-    .section__content{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-}
-.scroll--no{
-  .section__content{
-    min-height:100%;
-    
-    .section__content__main{
-      // @include min-sm{
-      //   display: flex;
-      //   height: 50vh;
-      //   width: 100%;
-      //   flex-direction: column;
-      //   justify-content: center;
-      // }
-
-    }
-  }
-}
-
-
-
-.header--simple{
-  background-color: #fff;
-  position: fixed;
-  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-right: 10px;
-  padding-left: 10px;
-  height:40px;
-  z-index: 1;
-  h1{
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #423977;
-    padding-left: 30px;
-    margin-left: 10px;
-    position: relative;
-    &:after{
-      content: "";
-      position: absolute;
-      left:0;
-      height:20px;
-      width:20px;
-      top:0;
-      display: block;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    &.headline--parameters{
-      &:after{
-        background-image: url("../images/icons/icon--settings.svg");
-      }
-    }
-    &.headline--membres{
-      &:after{
-        background-image: url("../images/icons/icon--group.svg");
-      }
-    }
-    &.headline--compte{
-      &:after{
-        background-image: url("../images/pixelImages/profil@2x.jpg");
-      }
-    }
-  }
+  padding-bottom: 60px;
 }
-.body--simple{
-  .nav--slider{
-    margin-top: 40px;
-    position: fixed;
-  }
-  .wrapper--flex{
-    margin-top: 100px;
+
+.main--scroll--slider{
+  align-items: unset;
+}
+
+a{
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.section{
+  min-height: 100%;
+  height:100%;
+  .section__content{
+    min-height: 100%;
+    height:100%;
   }
 }
 
-.image--feedback{
-  background-color: pink;
-  width:50%;
-  height:20%;
-}
+// a{
+//   animation: blinkLinks 1s infinite;
+//   @keyframes blinkLinks {
+//     0%{opacity: 1;}
+//     100%{opacity: 0.8;}
+//   }
+// }

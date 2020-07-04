@@ -24,7 +24,7 @@ window.addEventListener('load', function() {
       
       
       if(clickCounter===5){
-        nextButton.innerHTML='<a href="dashboard.html">Back</a>'
+        nextButton.innerHTML='<a href="back.html">Revenir au Dashboard ( Proto -> Back)</a>'
       }
     } 
     // else if(clickCounter===5){

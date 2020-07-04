@@ -27,6 +27,9 @@
     border-radius: 10px;
     border: 1px solid $color--light;
     background-color: #fff;
+    &:focus{
+      outline: none;
+    }
     color:$color--strong;
     @include min-sm{
       font-size: 12px;

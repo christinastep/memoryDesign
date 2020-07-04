@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gulp test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff"></head>
+
+</head>
+<body class="body--creecompte">
+
+     <div class="header--main">
+        <p class="header__logo"><a href="dashboard.html">Memory</a></p>
+        <a href="espaceAdmin.html" class="header__right header__right--close"></a>
+      </div>
+
+   
+      <div class="header__img">
+        <img src="images/icons/fille--cut.svg" alt="">
+      </div>
+
+
+    
+    <main class="main--scroll">
+      <a href="login.html" class="button button--inline button--login">Deja un compte</a>
+      <h2>cree un nouveau compte :</h2>
+
+      <button class="button--imageUpload">Ajoute un image</button>
+
+      <div class="input">
+        <label for="" class="input__label">Prenom :</label>
+        <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="Christina">
+      </div>
+
+      <div class="input">
+        <label for="" class="input__label">Nom :</label>
+        <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="Stephan">
+      </div>
+
+      <div class="input">
+        <label for="" class="input__label">E-mail :</label>
+        <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="christina_stephan@icloud.com">
+      </div>
+
+      <div class="input">
+        <label for="" class="input__label">Mot de passe :</label>
+        <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="********">
+      </div>
+
+      <div class="input">
+        <label for="" class="input__label">Vérification du mot de passe :</label>
+        <input type="text" class="input__field" placeholder="C'est quoi le Titre" value="*******">
+      </div>
+
+      <a href="login.html" class="button button--full button--full--noPadding">Cree un compte</a>
+    </main>
+
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- build:js js/main.min.js -->
+  
+  <script src="js/creecompte.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

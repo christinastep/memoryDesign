@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gulp test</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff"></head>
+
+</head>
+<body class="body--creeEspace body--slider scroll--no  slider--no">
+  <div class="header--main">
+    <p class="header__logo"><a href="dashboard.html">Memory</a></p>
+    
+  </div>
+  <header class="header header--30vh header--person"> 
+    <div class="espace__hero">
+      <div class="espace__hero__image">
+        <img src="images/pixelImages/oma@2x.png" alt="">
+      </div>
+      <div class="espace__hero__name">
+        Monie Müller
+      </div>
+    </div>
+      
+  </header>
+  <main>
+    <div class="wrapper--flex">
+      <section class="section">
+        <div class="section__content">
+          <div class="feedback">
+            <h2 class="feedback__headline">Tu etais pas encore
+                valide par l’admin d’espace</h2>
+            <img src="images/icons/icon--enter.svg" alt="" class="feedback__image">
+            <p class="text feedback__text">Tu as pas encore acces au espace de Monie Müller. Si tu veux joindre l’esapce demand access au Paul Messy (fis du Monie)</p>
+          </div> 
+          <button class="button button--strong button--full button--end button--nextStep">Revenir au Dashbord / Show mail</button>        
+        </div>
+        
+       
+      </section>
+
+      <section class="section">
+        <div class="section__content">
+          <div class="feedback">
+            <h2 class="feedback__headline">La demand acess
+                etait envoyer</h2>
+            <img src="images/icons/icon--enter.svg" alt="" class="feedback__image">
+            <p class="text feedback__text">La demande d’access etait bien envoyer. A partir lele moemnt ‘admin ta donne acces tu peux voir l’espace dans ta compte et tu vas recu un mail-</p>
+          </div>         
+        </div>
+        <a href="newsletter2.html" class="button button--strong button--full button--end">Demande acces au admin</a>
+      </section>
+    </div>
+    
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <!-- build:js js/main.min.js -->
+  
+  <script>
+    window.addEventListener('load', function() {
+      let isMobil;
+      if (window.matchMedia("(min-width: 750px)").matches) {
+        isMobil=false;
+      } else {
+        isMobil=true;
+      }
+      console.log("hello")
+ 
+      let wrapper= this.document.querySelector(".wrapper--flex");
+
+      document.querySelector(".button--nextStep").addEventListener("click",function(){
+        console.log("click")
+        if(isMobil) {
+          wrapper.style.transform="translateX(-100vw)";
+        }else{
+          wrapper.style.transform="translateX(-750px)";
+        }
+      })
+    });
+  </script>
+  <!-- endbuild -->
+</body>
+</html>

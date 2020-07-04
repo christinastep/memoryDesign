@@ -17,6 +17,13 @@
     width:34px;
     height:34px;
     margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      object-fit: cover;
+      height: 34px;
+      width: 34px;
+    }
   }
   .line--member__text{
     color: #423977;

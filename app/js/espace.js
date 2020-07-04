@@ -26,7 +26,7 @@ var main = document.querySelector("main");
 var headerEspace =document.querySelector(".header--espace");
 
 var buttonPartage = document.querySelector(".button--ajoute--momory");
-let headerImage=document.querySelector(".box--profilimage");
+let headerImage=document.querySelector(".espace__hero__image");
 console.log("scroll test");
 
 let rectheader=headerImage.getBoundingClientRect();

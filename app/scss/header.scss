@@ -1,5 +1,108 @@
 @import "variables";
 
+.header{
+  background-color: $color--light;
+  background-repeat: no-repeat;
+  width: 100%;
+  &--30vh{
+    height: 30vh;
+  }
+  &--50vh{
+    height: 40vh;
+  }
+  &--sitting{
+    background-image: url("../images/icons/fille--sitting.svg");
+    background-position: right bottom 60%;
+    background-size: 45%;
+    @include min-sm{
+      background-size: auto;
+    }
+  }
+  &--standing{
+    
+    background-image: url(../images/icons/fille.svg);
+    background-position: left 50% top 20%;
+    background-size: 87%;
+    @include min-sm{
+      background-size: 37%;
+    }
+  }
+  
+}
+.header__img{
+  overflow: hidden;
+  background-color: #EDE7F2;
+  //position: sticky;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  height: 30vh;
+  overflow: hidden;
+  svg,img{
+    height: 90%;
+    width: auto;
+  }
+}
+
+.header--simple{
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  height:40px;
+  z-index: 1;
+  h1{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #423977;
+    padding-left: 30px;
+    margin-left: 10px;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      left:0;
+      height:20px;
+      width:20px;
+      top:0;
+      display: block;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+    &.headline--parameters{
+      &:after{
+        background-image: url("../images/icons/icon--settings.svg");
+      }
+    }
+    &.headline--membres{
+      &:after{
+        background-image: url("../images/icons/icon--group.svg");
+      }
+    }
+    &.headline--compte{
+      &:after{
+        overflow: hidden;
+        background-size:cover;
+        background-color: red;
+        border-radius: 50%;
+        background-image: url("../images/pixelImages/profil@2x.jpg");
+      }
+    }
+  }
+}
+
+
+
+
+
 .header--main{
   display: flex;
   padding: 10px 15px 10px 15px;
@@ -27,6 +130,7 @@
   .header__right--compte{
     overflow: hidden;
     border-radius: 50%;
+    background-size: cover;
     background-image: url("../images/pixelImages/profil@2x.jpg");
   }
   .header__right--close{
@@ -46,3 +150,38 @@
     background-color: $color--light;
   }
 }
+
+.header--person{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .box--profilimage{
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+  }
+  .espace__name{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #423977;
+  }
+}
+
+.header--static{
+  position: relative;
+}
+
+.header--centered{
+  display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+

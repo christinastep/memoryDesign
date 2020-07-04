@@ -21,6 +21,7 @@
   align-items: center;
   margin-bottom: 10px;
   color:$color--strong;
+  margin-bottom: 20px;
   //margin-top: 30px;
   .group__Headline__text{
     font-weight: bold;
@@ -31,9 +32,8 @@
 
   }
 }
-.group__Headline{
-  margin-bottom: 20px;
-}
+
+
 .espace{
   width: 100%;
   border-radius: 10px;
@@ -43,20 +43,7 @@
   flex-direction: column;
   align-items: center;
   padding:20px;
-  margin-bottom: 30px;
-  .espace__image{
-
-  }
-  .espace__name{
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 20px;
-    color: #423977;
-
-  }
+  margin-bottom: 30px;  
 }
 
 .invitationEspace{
@@ -65,14 +52,9 @@
   }
 }
 
-.body--dashboard{
-  main{
-    padding: 0;
-  }
-}
 
-a{
-  display: block;
-  width: 100%;
-  text-decoration: none;
-}
+// .body--dashboard{
+//   main{
+//     padding: 0;
+//   }
+// }

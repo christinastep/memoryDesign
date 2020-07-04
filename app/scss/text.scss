@@ -1,0 +1,31 @@
+
+@import "variables";
+
+h2{
+  text-transform: uppercase;
+  color:$color--grey;
+  font-weight: 500;
+  @include min-sm{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.text{
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  @include min-sm{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &--alert{
+    color: $color--strong;
+    font-style: italic;
+  }
+}

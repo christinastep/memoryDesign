@@ -1,20 +1,11 @@
 @import "variables";
 
 .body--creeEspace{
-  .wrapper--flex{
-    display: flex;
-    width: 700vw;
-    section{
-      height:70vh;
-    }
-  }
+
   .button--end{
     @include min-sm{
       margin-bottom: 20vh;
     }
-  }
-  .box--profilimage{
-    margin-bottom: 30px;
   }
   .text{
     max-width: 500px;
@@ -31,6 +22,10 @@
       text-align:center;
       margin-top: 20px;
     }
+  }
+
+  .espace__hero--noDeco{
+    height: auto;
   }
   
 }

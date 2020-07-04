@@ -1,0 +1,35 @@
+@import "variables";
+
+.line--member--back{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  p{
+    width: 100%;
+  }
+  
+  .line--member__name{
+    text-align:left;
+    font-weight: bold;
+  }
+  .line--member__date,.line--member__admin{
+    text-align:left;
+  }
+  .line--member__buttonGroup{
+    align-items: center;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .line--member__buttonGroup__validation{
+      
+      display: flex;
+      justify-content: space-between;
+      .button{
+        padding: 0;
+        height:42px;width: 42px;line-height: 42px
+      }
+    }
+  }
+}
+
