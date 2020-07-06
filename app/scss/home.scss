@@ -1,0 +1,340 @@
+@import "variables";
+
+.body--home{
+  overflow-x: hidden;
+  .header--main{
+    //background-color: $color--light;
+  }
+}
+
+.hero{
+  height:82vh;
+  width:100vw;
+  background-color: $color--light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-image: url("../images/icons/fille--sitting.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 40%;
+  @include min-sm{
+    background-size: 25%;
+    position: fixed;
+  }
+  p{
+    color: $color--strong;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 300;
+
+    max-width: 350px;
+    @include min-sm{
+      font-size: 40px;
+        line-height: 47px;
+        max-width: 400px;
+    }
+
+  }
+}
+
+.intro{
+  position: relative;
+  padding: 15px;
+  padding-top: 80px;
+  overflow: hidden;
+  display: flex;
+  width: 100vw;
+  @include min-sm{
+  margin-top: 100vh;
+  padding-bottom: 20vh;
+  }
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+   
+  &:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/pizzelBorder--pink--bottom.svg");
+    width:110%;
+    height:60px;
+    top:-2px;
+    left:-5px;
+
+  }
+  @include min-sm{
+    &::after{
+      display: none;
+    }
+  }
+  .intro__headline{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #414143;
+    margin-bottom: 20px;
+    @include min-sm{
+      font-size: 26px;
+    }
+   
+    
+  }
+  p{
+    font-size: 15px;
+    line-height: 22px;
+    @include min-sm{
+      font-size: 18px;
+      max-width: 450px;
+    }
+    text-align: center;
+    color: #414143;
+    margin-bottom: 50px;
+    max-width: 350px;
+
+  }
+  .button{
+    @include min-sm{
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.section--step{
+  //height: 80vh;
+  background-color: $color--light;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  @include min-sm{
+    position: relative;
+    background-color: #fff;
+  }
+  
+  &:after{
+    content: "";
+    position: absolute;
+    background-image: url("../images/icons/pizzelBorder--white--bottom.svg");
+    width:110%;
+    height:60px;
+    top:-2px;
+    left:-5px;
+
+  }
+  @include min-sm{
+    &::after{
+      display: none;
+    }
+  }
+  .section--step__imgWrapper{
+    height:60vh;
+    position: relative;
+    overflow: hidden;
+    @include min-sm{
+      //border-bottom: solid 10vh $color--strong;
+      height: 90vh;
+      width:60vw;
+      background-color: $color--light;
+      margin-bottom: 20vh;
+    }
+    img{
+      position: absolute;
+     
+    }
+  }
+  .section--step__box{
+
+    height: 20vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+      font-weight: 500;
+      margin: 0;
+      max-width: 200px;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #423977;
+    }
+    @include min-sm{
+      position: absolute;
+      left:0;
+      top:30vh;
+      background-color: transparent;
+      h2{
+        font-size: 40px;
+        line-height: 47px;
+        max-width: 400px;
+        text-align: left;
+
+      }
+      
+    }
+  }
+}
+.section--step--1{
+  @include min-sm{
+    padding-left: 10vw;
+  }
+  .section--step__imgWrapper{
+    img{
+      width: 80%;
+      bottom: 0;
+      left:0;
+      @include min-sm{
+        width:auto;
+        height: 100vh;
+      }
+    }
+  }
+  .section--step__box{
+    @include min-sm{
+     left:60vw;
+    }
+  }
+}
+.section--step--2{
+  @include min-sm{
+    padding-left: 30vw;
+  }
+  .section--step__imgWrapper{
+    img{
+      width: 150%;
+      left: -25%;
+      top: -40%;
+      @include min-sm{
+        height:125%;
+        width: auto;
+        right:0;
+        left:auto;
+        top:-12%;
+      }
+    }
+
+  }
+  .section--step__box{
+    @include min-sm{
+     left:20vw;
+    }
+  }
+}
+.section--step--3{
+  @include min-sm{
+    padding-left: 10vw;
+  }
+  .section--step__imgWrapper{
+    img{
+      bottom: 0;
+      right:0;
+      width: 100%;
+      @include min-sm{
+        transform: scaleX(-1);
+        width: auto;
+        height:130%;
+        left:0;
+        bottom:0;
+      }
+    }
+  }
+  .section--step__box{
+    @include min-sm{
+     left:60vw;
+    }
+  }
+}
+
+.section--step--4{
+  @include min-sm{
+    height: auto;
+    position: relative;
+    overflow: visible;
+    display: none;
+  }
+
+  .section--step__imgWrapper{
+    border-bottom: none;
+    @include min-sm{
+      height: auto;
+      position: relative;
+      width: 100vw;
+      background-color: #EDE7F2;
+      margin-bottom: 0vh;
+    }
+    img{
+      
+        width: 30%;
+        left:50%;
+        top:50%;
+        transform: translateX(-50%) translateY(-50%);
+        // @include min-sm{
+        //   width:25vw;
+        //   //transform: translate(0);
+        //   left:75%;
+        // }
+        @include min-sm{
+          height: auto;
+          position: relative;
+          left: auto;
+          top:auto;
+          right:auto;
+          transform: translateX(0%) translateY(0%);
+        }
+    }
+  }
+  .section--step__box{
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    @include min-sm{
+      position: relative;
+      height: auto;
+    }
+   
+    h2{
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #414143;
+      margin-bottom: 20px;
+    }
+    .qualiyBox{
+      display: flex;
+      width:80%;
+      font-size: 12px;
+      line-height: 16px;
+      color: #414143;
+      margin-bottom: 15px;
+      align-items: center;
+      svg{
+        width:30px;
+        margin-right: 5px;
+        
+      }
+    }
+  }
+}
+
+.header__logo{
+  a{
+    color: #423977;
+  }
+}
+
+.button--conection{
+  position: fixed;
+  top: 10px;
+  right:15px;
+  padding: 10px;
+  width:90px
+}
+
+
