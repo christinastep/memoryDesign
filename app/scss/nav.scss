@@ -30,6 +30,12 @@
     &:focus{
       outline: none;
     }
+
+    @include min-sm{
+      &:hover{
+        background-color: #8070A4;
+      }
+    }
     color:$color--strong;
     @include min-sm{
       font-size: 12px;

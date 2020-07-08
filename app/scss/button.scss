@@ -19,10 +19,12 @@
   line-height: 12px;
   color: $color--strong;
   cursor: pointer;
-  // &:hover{
-  //   background-color: $color--strong;
-  //   color: #fff;
-  // }
+  @include min-sm{
+    &:hover{
+      background-color: $color--strong;
+      color: #fff;
+    }
+  }
   &:focus{
     outline: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
@@ -84,10 +86,17 @@
   a{
     color:#fff;
   }
-  // &:hover{
-  //   background-color: #fff;
-  //   border:solid 1px $color--strong;
-  // }
+  @include min-sm{
+      &:hover{
+    background-color: #fff;
+    color:$color--strong !important;
+    border:solid 1px $color--strong;
+    a{
+      color:$color--strong !important;
+    }
+  }
+  }
+  
 }
 
 .button--add{
@@ -219,6 +228,15 @@
   font-weight: 300;
   margin-top: 10px;
   text-decoration: underline;
+  @include min-sm{
+    &:hover{
+      background-color: transparent;
+      color: $color--strong;
+      text-decoration: none;
+    }
+    
+  }
+  
 }
 
 .button--down{
