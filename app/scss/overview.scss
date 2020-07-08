@@ -3,10 +3,19 @@
 .overview{
   background-color: $color--strong;
   min-height: 100vh;
-  padding:10px;
+  //padding:10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  //padding-top: 20vh;
+  .header__img{
+    position: fixed;
+    top: 0;
+
+  }
+  @include min-sm{
+    //padding-top: 0vh;
+  }
   .box--flex{
     display: flex;
     width:100%;
@@ -20,11 +29,14 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
   }
   p{
     color: #fff;
     font-weight: 200;
     text-align: center;
+    margin-bottom: 50px;
   }
   .button{
     margin: 5px;

@@ -16,6 +16,7 @@
     background-size: 45%;
     @include min-sm{
       background-size: auto;
+      background-position: right bottom;
     }
   }
   &--standing{
